@@ -18,8 +18,8 @@ public class CubeSoundController : MonoBehaviour {
 		
 	}
 
-    void OnCollisionEnter(Collision other)
+    void OnCollisionEnter2D(Collision2D other)
     {
-        audioSource.Play();
+        GetComponent<AudioSource>().Play();
     }
 }
